@@ -2,23 +2,21 @@ package org.example;
 
 import org.example.modelos.Vehiculo;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 
-        //DENTRO DEL MAIN USO LAS CLASES DEL PROGRAMA
-
-        //COMO SE USA UNA CLASE
-        //(USAR UNA CLASE ES ASIGNARLE VALORES A SUS ATRIBUTOS)
-        //(USAR UNA CLASE ES LLAMAR SUS METODOS)
-
-        //PARA USAR UNA CLASE DEBO DE CREAR UN OBJETO
-
-        //QUE ES UN OBJETO?
-        // UN OBJETO ES UNA VARIABLE PERO ESPECIAL
-
-        Integer edad = 34;
-        Vehiculo objeto;
+        Vehiculo vehiculo = new Vehiculo();
+        Vehiculo vehiculoDos = new Vehiculo(5,"mazda",LocalDate.now(),300.0,"negro","mazda ultimo modelo","automovil",300,400.0,200);
 
 
+        //llamamos al metodo set
+        vehiculo.setMarca("volvo");
+        vehiculo.setAutonomia(500);
+
+
+        System.out.println("El nombre del vehiculo 2: "+ vehiculo.getMarca());
+        System.out.println("la autonomia es: " + vehiculo.getAutonomia());
     }
 }

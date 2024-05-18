@@ -3,30 +3,91 @@ package org.example.modelos;
 public class Mercancia {
 
     //id (int)
-    Integer id;
+    private Integer id;
 
     //volumenOcupado (double)
-    Double volumenOcupado;
+    private Double volumenOcupado;
 
     //tipo (String)
-    String tipo;
+    private String tipo;
 
     //peso (Double)
-    Double peso;
+    private Double peso;
 
     //descripcion (String)
-    String descripcion;
+    private String descripcion;
 
     //avaluo (int)
-    Integer avaluo;
+    private Integer avaluo;
 
     //direccionRemitente (String)
-    String direccionRemitente;
+    private String direccionRemitente;
 
     //direccionDestinatario (String)
-    String direccionDestinatario;
+    private String direccionDestinatario;
 
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
+    public Double getVolumenOcupado() {
+        return volumenOcupado;
+    }
+
+    public void setVolumenOcupado(Double volumenOcupado) {
+        this.volumenOcupado = volumenOcupado;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getAvaluo() {
+        return avaluo;
+    }
+
+    public void setAvaluo(Integer avaluo) {
+        this.avaluo = avaluo;
+    }
+
+    public String getDireccionRemitente() {
+        return direccionRemitente;
+    }
+
+    public void setDireccionRemitente(String direccionRemitente) {
+        this.direccionRemitente = direccionRemitente;
+    }
+
+    public String getDireccionDestinatario() {
+        return direccionDestinatario;
+    }
+
+    public void setDireccionDestinatario(String direccionDestinatario) {
+        this.direccionDestinatario = direccionDestinatario;
+    }
 }
